@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waves</title>
+    <style>
+      @keyframes wave {
+        0% {
+          transform: scaleY(1);
+        }
+        50% {
+          transform: scaleY(0);
+        }
+        100% {
+          transform: scaleY(1);
+        }
+      }
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 30px;
+        width: 76px;
+        transform-origin: 50% 50%;
+      }
+      .container > div {
+        display: inline-block;
+        position: absolute;
+        height: 30px;
+        width: 4px;
+        background-color: black;
+        transform-origin: 50% 50%;
+        animation: wave linear 0.5s infinite;
+      }
+      .container > div:nth-child(2) {
+        left: 8px;
+        animation-delay: 0.05s;
+      }
+      .container > div:nth-child(3) {
+        left: 16px;
+        animation-delay: 0.1s;
+      }
+      .container > div:nth-child(4) {
+        left: 24px;
+        animation-delay: 0.15s;
+      }
+      .container > div:nth-child(5) {
+        left: 32px;
+        animation-delay: 0.2s;
+      }
+      .container > div:nth-child(6) {
+        left: 40px;
+        animation-delay: 0.25s;
+      }
+      .container > div:nth-child(7) {
+        left: 48px;
+        animation-delay: 0.3s;
+      }
+      .container > div:nth-child(8) {
+        left: 56px;
+        animation-delay: 0.35s;
+      }
+      .container > div:nth-child(9) {
+        left: 64px;
+        animation-delay: 0.4s;
+      }
+      .container > div:nth-child(10) {
+        left: 72px;
+        animation-delay: 0.45s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
